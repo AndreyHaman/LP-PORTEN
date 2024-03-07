@@ -1,0 +1,55 @@
+.top__line{
+
+  background-color: #000;
+ .top__line__items{
+
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    font-family: $main-text;
+    height: 44px;
+    color:$buttons;
+    font-size: 12px;
+    align-items:center;
+    gap: 593px;
+      @media screen and (max-width:1250px) 
+      {
+        width: 100%;
+      justify-content:center;
+      gap:10%;
+      }
+      @media screen and (max-width:900px) {
+      gap:0px;
+      justify-content: space-around;
+      max-width: 100%;
+      }
+  }
+    .contacts{
+      padding-left: 100px;
+      display: flex;
+      gap: 15px;
+        img{
+            width: 16px;
+            height: 16px;
+          }
+          pre{
+            font-weight: 400;
+            font-family: $main-text;
+              @media screen and (max-width:900px) {
+                display: none;
+                
+              }
+          }
+    }
+     
+ }
+ .loginmenu{
+      
+  display: flex;
+  gap:19px;   
+}
+ a{
+  color: $buttons;
+ }
+ 
+

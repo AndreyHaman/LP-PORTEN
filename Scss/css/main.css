@@ -1,0 +1,295 @@
+/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+/*
+font-family: "PT Sans", sans-serif;
+*/
+body {
+  background: #0f0f0f;
+}
+
+.top__line {
+  background-color: #000;
+}
+.top__line .top__line__items {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "PT Sans", sans-serif;
+  height: 44px;
+  color: gray;
+  font-size: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 593px;
+}
+@media screen and (max-width: 1250px) {
+  .top__line .top__line__items {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .top__line .top__line__items {
+    gap: 0px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    max-width: 100%;
+  }
+}
+.top__line .contacts {
+  padding-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.top__line .contacts img {
+  width: 16px;
+  height: 16px;
+}
+.top__line .contacts pre {
+  font-weight: 400;
+  font-family: "PT Sans", sans-serif;
+}
+@media screen and (max-width: 900px) {
+  .top__line .contacts pre {
+    display: none;
+  }
+}
+
+.loginmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 19px;
+}
+
+a {
+  color: gray;
+}
+
+.second__line {
+  margin: 0 auto;
+  width: 1196px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 563px;
+}
+.second__line nav {
+  display: none;
+}
+.second__line .logo {
+  width: 104px;
+  height: 49px;
+  -webkit-transform: translateX(75px);
+      -ms-transform: translateX(75px);
+          transform: translateX(75px);
+}
+.second__line .nav_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.second__line .nav_links .icon_link_first {
+  width: 22px;
+  height: 22px;
+  margin-left: 32px;
+}
+.second__line .nav_links .icon_link_second {
+  width: 22px;
+  height: 22px;
+  margin-left: 40px;
+}
+.second__line .nav_links .links {
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+}
+.second__line .nav_links #firstlink {
+  margin-right: 17px;
+}
+.second__line .nav_links #secondlink {
+  padding-left: 19px;
+  padding-right: 29px;
+}
+.second__line .nav_links #thirdlink :hover, .second__line .nav_links #secondlink :hover, .second__line .nav_links #firstlink :hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: white;
+}
+@media screen and (max-width: 1200px) {
+  .second__line .nav_links {
+    display: none;
+  }
+}
+
+.first_srceen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(/img/first_sreen_bg.png);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 810px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.first_srceen .mainlogo {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin-bottom: 80px;
+}
+.first_srceen .about_us {
+  font-family: "PT Sans", sans-serif;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.collections .season_21_22_box {
+  display: inline-block;
+  width: 50%;
+}
+.collections .new_collection_column {
+  display: inline-block;
+  background-image: url(/img/new_collection.png);
+  background-repeat: no-repeat;
+  height: 730px;
+  padding: 0px;
+  width: 49.5%;
+}
+.collections .new_collection_column h2 {
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin-top: 484px;
+}
+.collections .new_collection_column img {
+  height: 730px;
+  width: 100%;
+}
+.collections .season_21_22 {
+  height: 730px;
+  padding: 0px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
